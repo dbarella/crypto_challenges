@@ -1,3 +1,19 @@
+// Convert hex strings to base63 strings.
+
+extern crate clap;
+use clap::{App, Arg};
+
+
 fn main() {
-    println!("Hello, world!");
+    let matches = App::new("Hex-to-Base64 Translator")
+        .version("1.0")
+        .author("Dan B.")
+        .about("Converts hex strings to base64 strings.")
+        .arg(Arg::with_name("hex")
+            .help("Hex string to translate."))
+        .get_matches();
+
+    if let Some(hex) = matches.value_of("hex") {
+      println!("{}\n", hex);
+    }
 }
