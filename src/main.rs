@@ -14,6 +14,6 @@ fn main() {
         .get_matches();
 
     if let Some(hex) = matches.value_of("hex") {
-      println!("{}\n", hex);
+      println!("{}", hex);
     }
 }
