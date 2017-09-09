@@ -1,4 +1,4 @@
-// Convert hex strings to base63 strings.
+// Convert hex strings to base64 strings.
 
 extern crate clap;
 use clap::{App, Arg};
