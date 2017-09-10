@@ -1,21 +1,10 @@
-// Libraries for encoding base64 strings.
+// Library for converting hex strings to base64 strings.
 
-mod base64 {
-    use super::hex::Hex;
+mod base64;
+mod hex;
 
-    pub type Base64 = Vec<u8>;
-
-    fn from(hex: Hex) -> Base64 {
-        vec!()
-    }
-}
-
-mod hex {
-   pub type Hex = Vec<u8>;
-
-   fn from(input: &str) -> Hex {
-      vec!()
-   }
+fn convert(hex: hex::Hex) -> base64::Base64 {
+    unimplemented!();
 }
 
 #[cfg(test)]
