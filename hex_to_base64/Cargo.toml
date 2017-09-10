@@ -2,6 +2,3 @@
 name = "hex_to_base64"
 version = "0.1.0"
 authors = ["Dan Barella <dan.barella@gmail.com>"]
-
-[dependencies]
-clap = "2.26.0"
