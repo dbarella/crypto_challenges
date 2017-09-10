@@ -3,7 +3,6 @@
 extern crate clap;
 use clap::{App, Arg};
 
-
 fn main() {
     let matches = App::new("Hex-to-Base64 Translator")
         .version("1.0")
